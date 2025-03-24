@@ -15,8 +15,17 @@
       --accent-color: #f4f4f4;
       --text-color: #333333;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Montserrat', sans-serif; background: var(--background-color); color: var(--text-color); }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--background-color);
+      color: var(--text-color);
+    }
+    /* Шапка сайта */
     header {
       display: flex;
       justify-content: space-between;
@@ -40,13 +49,20 @@
       font-weight: 500;
       transition: color 0.3s;
     }
-    .header-links a:hover { color: var(--text-color); }
+    .header-links a:hover {
+      color: var(--text-color);
+    }
+    /* Контейнер */
     .container {
       max-width: 1200px;
       margin: 40px auto;
       padding: 0 20px;
     }
-    h1 { text-align: center; margin-bottom: 40px; }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    /* Сетка моделей */
     .models-grid {
       display: flex;
       flex-wrap: wrap;
@@ -60,11 +76,24 @@
       padding: 20px;
       text-align: center;
       transition: box-shadow 0.3s;
+      background-color: #fff;
     }
-    .model-card:hover { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); }
-    .model-card img { width: 100%; border-radius: 10px; }
-    .model-card h3 { color: var(--primary-color); margin: 15px 0; }
-    .model-card p { font-size: 0.95rem; margin-bottom: 15px; }
+    .model-card:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .model-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .model-card h3 {
+      color: var(--primary-color);
+      margin: 15px 0;
+      font-size: 1.2rem;
+    }
+    .model-card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
     button {
       background-color: var(--primary-color);
       color: #fff;
@@ -74,7 +103,10 @@
       cursor: pointer;
       transition: background 0.3s;
     }
-    button:hover { background-color: #004494; }
+    button:hover {
+      background-color: #004494;
+    }
+    /* Подвал */
     footer {
       background-color: var(--accent-color);
       text-align: center;
@@ -89,31 +121,44 @@
   <header>
     <a href="./index.html" class="logo">3D Print Marketplace</a>
     <div class="header-links">
+      <!-- Ссылки на личные кабинеты -->
       <a href="./printer.html">Владелец 3D‑принтера</a>
       <a href="./designer.html">Дизайнер</a>
     </div>
   </header>
   <div class="container">
-    <h1>Список 3D‑моделей для печати</h1>
+    <h1>3D‑модели с сайта 3dtoday.ru</h1>
     <div class="models-grid">
+      <!-- Пример карточки 1 -->
       <div class="model-card">
-        <img src="https://via.placeholder.com/300x200?text=Модель+1" alt="Модель 1">
-        <h3>Модель 1</h3>
-        <p>Описание модели 1 для 3D печати.</p>
-        <button>Выбрать</button>
+        <!-- Ссылка на модель (пример!) -->
+        <img src="https://via.placeholder.com/300x200?text=Model+1" alt="Пример модели 1">
+        <h3>Готический замок</h3>
+        <p>Пример 3D-модели в разделе «Архитектура»</p>
+        <!-- Кнопка, ведущая на 3dtoday -->
+        <a href="https://3dtoday.ru/3d-models/architecture/houses/gothic-castle" target="_blank">
+          <button>Посмотреть</button>
+        </a>
       </div>
+      <!-- Пример карточки 2 -->
       <div class="model-card">
-        <img src="https://via.placeholder.com/300x200?text=Модель+2" alt="Модель 2">
-        <h3>Модель 2</h3>
-        <p>Описание модели 2 для 3D печати.</p>
-        <button>Выбрать</button>
+        <img src="https://via.placeholder.com/300x200?text=Model+2" alt="Пример модели 2">
+        <h3>Фигурка дракона</h3>
+        <p>Пример 3D-модели в разделе «Персонажи»</p>
+        <a href="https://3dtoday.ru/3d-models/characters/fantasy/dragon-model" target="_blank">
+          <button>Посмотреть</button>
+        </a>
       </div>
+      <!-- Пример карточки 3 -->
       <div class="model-card">
-        <img src="https://via.placeholder.com/300x200?text=Модель+3" alt="Модель 3">
-        <h3>Модель 3</h3>
-        <p>Описание модели 3 для 3D печати.</p>
-        <button>Выбрать</button>
+        <img src="https://via.placeholder.com/300x200?text=Model+3" alt="Пример модели 3">
+        <h3>Подставка под телефон</h3>
+        <p>Пример 3D-модели в разделе «Гаджеты»</p>
+        <a href="https://3dtoday.ru/3d-models/gadgets/smartphone-stand" target="_blank">
+          <button>Посмотреть</button>
+        </a>
       </div>
+      <!-- Добавьте больше карточек при необходимости -->
     </div>
   </div>
   <footer>
