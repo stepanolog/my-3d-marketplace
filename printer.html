@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Print Marketplace – Модели для печати</title>
+  <!-- Подключение шрифта Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0056b3;
+      --background-color: #ffffff;
+      --accent-color: #f4f4f4;
+      --text-color: #333333;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; background: var(--background-color); color: var(--text-color); }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #eaeaea;
+    }
+    header .logo {
+      font-size: 1.8em;
+      font-weight: 600;
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    .header-links {
+      display: flex;
+      gap: 20px;
+    }
+    .header-links a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .header-links a:hover {
+      color: var(--text-color);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .models-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .model-card {
+      width: 300px;
+      border: 1px solid #eaeaea;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: box-shadow 0.3s;
+    }
+    .model-card:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .model-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .model-card h3 {
+      color: var(--primary-color);
+      margin: 15px 0;
+    }
+    .model-card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+    button {
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #004494;
+    }
+    footer {
+      background-color: var(--accent-color);
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #eaeaea;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">3D Print Marketplace</a>
+    <div class="header-links">
+      <a href="printer.html">Владелец 3D‑принтера</a>
+      <a href="designer.html">Дизайнер</a>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Список 3D‑моделей для печати</h1>
+    <div class="models-grid">
+      <div class="model-card">
+        <img src="https://via.placeholder.com/300x200?text=Модель+1" alt="Модель 1">
+        <h3>Модель 1</h3>
+        <p>Описание модели 1 для 3D печати.</p>
+        <button>Выбрать</button>
+      </div>
+      <div class="model-card">
+        <img src="https://via.placeholder.com/300x200?text=Модель+2" alt="Модель 2">
+        <h3>Модель 2</h3>
+        <p>Описание модели 2 для 3D печати.</p>
+        <button>Выбрать</button>
+      </div>
+      <div class="model-card">
+        <img src="https://via.placeholder.com/300x200?text=Модель+3" alt="Модель 3">
+        <h3>Модель 3</h3>
+        <p>Описание модели 3 для 3D печати.</p>
+        <button>Выбрать</button>
+      </div>
+      <!-- Можно добавить дополнительные карточки -->
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 3D Print Marketplace. Все права защищены.</p>
+  </footer>
+</body>
+</html>
